@@ -56,7 +56,7 @@ stocks = pd.DataFrame(all_rows, columns=["Symbol", "CompanyName", "MarketCap", "
 # print(stocks)
 
 # Output the dataframe into a CSV without index
-stocks.to_csv("nasdaqStocks.csv", index=False)
+#stocks.to_csv("nasdaqStocks.csv", index=False)
 
 # Let's have some fun with the output
 # I want to have a list of stocks which has the revenue in B and organize them in an ascending order
