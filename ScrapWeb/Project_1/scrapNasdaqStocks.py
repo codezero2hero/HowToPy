@@ -6,8 +6,12 @@ from bs4 import BeautifulSoup
 import time
 import pandas as pd
 
+# Set up Selenium WebDriver and insert the headless (invisible) option when scrapping
+options = webdriver.ChromeOptions()
+options.add_argument('--headless')
+
 # Initialized the webdrive (Chrome, Firefox etc can be used)
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(options=options)
 
 # Page which will be scrapped
 url = "https://stockanalysis.com/list/nasdaq-stocks/"
