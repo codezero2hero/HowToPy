@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 
 ####################
 # Setup variables  #
-####################
+####################875172
 
 # Load environment variables from .env file
 load_dotenv()
@@ -129,7 +129,7 @@ def switch_and_download(period, T):
 def generate_date_range():
     """Generate the current date range string (e.g., 'Oct 26, 2023 - Oct 26, 2024')."""
     today = datetime.today()
-    previous_yearDate = f"{datetime.today().strftime('%b')} {today.day}, {today.year -1}"
+    previous_yearDate = f"{datetime.today().strftime('%b')} {datetime.today().strftime('%d')}, {today.year -1}"
     start_date = today.strftime("%b %d, %Y")
     logging.info(f"Generating date range {previous_yearDate} - {start_date}")
     return f"{previous_yearDate} - {start_date}"
